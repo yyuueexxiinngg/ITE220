@@ -43,7 +43,7 @@ customerElement.textContent = customerName;
 
 var greetingText = "";
 var greetingElement = document.getElementById("greeting");
-time =new Date().getHours();
+var time =new Date().getHours();
 if(time>=5&&time < 12){
     greetingText = "Good morning";
 }else if(time>=12&&time < 17){
