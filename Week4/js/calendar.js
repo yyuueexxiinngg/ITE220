@@ -24,7 +24,7 @@ function displayCalendar() {
     var calendarText = "<table class='table table-condensed'>";
     calendarText += header;
     for (var i = 1;i <= 31; i++){
-        if(i%7==0   ){
+        if(i%7===0){
             calendarText += "<th>"+i+"</th></tr><tr>";
         }else {
             calendarText += "<th>" + i + "</th>";
@@ -32,5 +32,5 @@ function displayCalendar() {
     }
     calendarText += "</table>";
     ele.innerHTML = calendarText;
-};
+}
 displayCalendar();
