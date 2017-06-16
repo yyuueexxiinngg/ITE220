@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SMDB - Movies center in Stamford!</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="http://getbootstrap.com/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header" >
+                <a class="navbar-brand" href="http://www.mihoyo.tech" style="padding: 2px 0 0 0">
+                    <img alt="Brand" src="images/stamford-logo.png">
+                </a>
+            </div>
+            <div class="nav navbar-nav">
+                <li class="active"><a href="./">Home</a></li>
+                <li><a href="list.html">Movie list</a> </li>
+            </div>
+            <form class="navbar-form navbar-left pull-right" role="search" method="get" action="search.html">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search movies" name="search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </nav>
+    <div class="row content-box">
+        <div class="row text-center">
+            <div class="col-md-2">
+                <h3 class="bg-info">Popular movies</h3>
+            </div>
+            <div class="col-md-9">
+            </div>
+            <div class="col-md-1">
+                <a href="list.html?sort=popular&page=1"><span class="glyphicon glyphicon-align-justify">More</span></a>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-md-12">
+            <div class="row text-center" id="popular">
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="row content-box">
+        <div class="row text-center">
+            <div class="col-md-2">
+                <h3 class="bg-info">Top rated</h3>
+            </div>
+            <div class="col-md-9">
+            </div>
+            <div class="col-md-1">
+                <a href="list.html?sort=top_rated&page=1"><span class="glyphicon glyphicon-align-justify">More</span></a>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row text-center" id="top_rated">
+            </div>
+        </div>
+    </div>
+
+    <div class="row content-box">
+        <div class="row text-center">
+            <div class="col-md-2">
+                <h3 class="bg-info">Now playing</h3>
+            </div>
+            <div class="col-md-9">
+            </div>
+            <div class="col-md-1">
+                <a href="list.html?sort=now_playing&page=1"><span class="glyphicon glyphicon-align-justify">More</span></a>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row text-center" id="now_playing">
+            </div>
+        </div>
+    </div>
+
+    <div id="message"></div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted" id="footer">All information are provided by<a href="https://www.themoviedb.org/">TMDB</a> </p>
+    </div>
+</footer>
+</body>
+<script type="text/javascript" src="js/movie.js"></script>
+</html>
