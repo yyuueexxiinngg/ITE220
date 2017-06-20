@@ -7,19 +7,16 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12 text-center">
-            <h1>Web Development II Exam</h1>
+            <h1>Hello</h1>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-md-4">
-            <form action="loginAction.php" method="get">
-                <input type="text" name="user-name" placeholder="Username" class="form-control">
+        <div class="col-md-8">
+            <form action="loginAction.php" method="post">
+                <input type="text" name="ID" placeholder="Enter student ID" class="form-control">
         </div>
 
-        <div class="col-md-4">
-                <input type="password" name="password" placeholder="Password" class="form-control">
-        </div>
 
         <div class="col-md-4">
                 <button class="btn btn-block btn-info" type="submit">Login</button>
@@ -28,9 +25,8 @@
         </form>
     </div>
 
+    <div class="row text-center"> Student ID must be 9 numbers e.g. 216119911. Character is not allowed</div>
 
 </div>
-
-
 </body>
 </html>
